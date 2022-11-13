@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fundo {
+  width: 100vw;
+  height: 90vh;
+  background-color: #1f2635;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cabecalho {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 2rem 5rem 0;
+}
+
+.bigBoard {
+  padding-left: 5rem;
   color: white;
+  width: 40%;
 }
 
-.App-link {
-  color: #61dafb;
+.bigBoard h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bigBoard p {
+  font-weight: lighter;
+  margin-bottom: 0rem;
+}
+
+.bigBoard button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  color: #1f2635;
+  border-radius: 5px;
+  border: none;
+}
+
+.littleBoards {
+  display: flex;
+  align-items: center;
+  height: 75vh;
+  justify-content: space-around;
+}
+
+.boards {
+  width: 10rem;
+}
+
+.boards p {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding-left: 1rem;
+  color: #1f2635;
+}
+
+.boards h3 {
+  padding-left: 1rem;
+  color: #1f2635;
 }

@@ -1,12 +1,13 @@
+import React from "react";
 
 function LittleBoards(props) {
-    console.log(props.name);
-
-    return (
-        <div>
-            <p>teste</p>
-        </div>
-    )
+  return (
+    <div className="boards">
+      <img alt={props.title} src={props.image} />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+    </div>
+  );
 }
 
-export default LittleBoards
+export default LittleBoards;
